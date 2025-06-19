@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando elementos DOM</title>
+
+        <style>
+            div{
+                background-color: green;
+                color: white;
+                width: 200px;
+                height: 200px;
+                line-height: 200px; /*para deixar no meio da div o texto*/
+                text-align: center;
+                font-size: 30px;
+                border: 4px solid black;
+            }
+        </style>
+    
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>    
+</body>
+
+    <script>
+       
+        var a = document.getElementById('area') //criei uma variável 'a', chamando pelo ID 'area'//
+
+        //criei eventos para minha variável, neste caso, com o uso do mouse, chamo a ação e dou um nome para ela//
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        
+        //criei uma função para cada ação, usando o nome de cada uma delas//
+
+        //quando clicar na div, vai aparecer o texto 'clicou' e ficar o fundo vermelho//
+        function clicar() {
+            a.innerText = 'Clicou'
+            a.style.backgroundColor = 'red'
+        }
+
+        //quando entrar com o mouse na div, vai aparecer o texto 'entrou'//
+        function entrou() {
+            a.innerText = 'Entrou'
+        }
+
+        //quando sair com o mouse da div, vai aparecer o texto 'saiu' e o fundo vai voltar a cor verde//
+        function saiu() {
+            a.innerText = 'Saiu'
+            a.style.backgroundColor = 'green'
+        }
+        
+
+    </script>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando</title>
+
+    <style>
+
+        body{
+            font-size: normal;
+            font-size: 18px;            
+        }
+
+        div#total{
+            margin-top: 20px;
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Somando Valores</h1>
+    <input type="number" name="txt1" id="tx1"> + <!--adicinei uma caixa com número-->
+    <input type="number" name="txt2" id="tx2"> <!--adicinei uma caixa com número-->
+    <input type="button" value="Somar" onclick="somar()" > <!--adicinei uma botão com a palavra 'somar', colocando uma ação ao clicar com o mouse-->
+    <div id="total">Resultado</div> <!--adicinei uma div com o nome resultado-->   
+</body>
+
+    <script>
+        //chamar a ação que configurei no html//
+        function somar() {
+            var cx1 = document.getElementById('tx1') //criado uma variável para primeira caixa, pelo id//
+            var cx2 = document.querySelector('input#tx2') //criado uma variável para segunda caixa, pelo seletor//
+            var t = document.getElementById('total') //criado uma variável para a div 'resultado', pelo id//
+            var n1 = Number(cx1.value) //criado uma variável transformando o conteúdo em número//
+            var n2 = Number(cx2.value) //criado uma variável transformando o conteúdo em número//
+            var s = n1 + n2 //criado uma variável somando as duas variáveis de números//
+            t.innerHTML = `A soma entre ${n1} e ${n2} é <strong>${s}</strong>` //vai imprimir esse texto, citando os dois valores e seu resultao//
+        }
+
+    </script>
+</html>
