@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando funções</title>
+</head>
+<body>
+    <h1>Consulta de Nacionalidades</h1>
+    <input type="text" name="txtna" id="txna">
+    <input type="button" value="Consultar" onclick="consultar()">
+    <div id="res"></div>    
+</body>
+
+    <script>
+        function consultar() {
+            var cx = document.querySelector('input#txna')
+            var país = document.querySelector('div#res')
+            if( cx.value == 'Brasil') {
+                 país.innerHTML = `A sua nacionalidade é Brasileira`} else {
+                    país.innerHTML = `A sua nacionalidade é Estrangeira`}
+            }
+        
+
+    </script>
+
+
+
+</html>
