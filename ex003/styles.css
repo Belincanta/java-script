@@ -21,8 +21,17 @@ div{
     padding: 10px;
 }
 
-div#msg{
+div#dados{
     font-family: Arial, Helvetica, sans-serif;    
+}
+
+input#txinicio, #txfim, #txpasso{
+    display: flex;
+    align-items: center;
+}
+
+input#botao{
+    padding: 5px;
 }
 
 footer{
