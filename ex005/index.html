@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analisador de Números</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+            Número (entre 1 a 100)
+             <input type="number" name="n_name" id="txnum">
+             <input id="gerar" type="button" value="Adicionar Número" onclick="adicionar()">
+            </p>         
+            <select name="analisar" id="analtab" size="11">
+                <option>Digite um valor acima</option>
+            </select> 
+            <input type="button" value="Analisar" onclick="analisar()">
+        </div>
+
+        <div id="res">
+            Aguardando Análise...
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Feito por Alessandro Belincanta</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
