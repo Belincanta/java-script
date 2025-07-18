@@ -25,6 +25,11 @@ div#msg{
     font-family: Arial, Helvetica, sans-serif;    
 }
 
+option{
+    width: 145px;
+    
+}
+
 footer{
     color: white;
     text-align: center;
